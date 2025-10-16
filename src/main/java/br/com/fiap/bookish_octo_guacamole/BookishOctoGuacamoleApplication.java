@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BookishOctoGuacamoleApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BookishOctoGuacamoleApplication.class, args);
+		JAVA.run(BookishOctoGuacamoleApplication.class, args);
 	}
 
 }
