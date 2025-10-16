@@ -5,9 +5,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  # - script: ./gradlew build
-  #   displayName: "Gradle build"
-
   - task: Gradle@4
     inputs:
       gradleWrapperFile: "gradlew"
