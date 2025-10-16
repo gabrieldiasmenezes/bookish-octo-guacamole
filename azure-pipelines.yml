@@ -5,5 +5,16 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - script: ./gradlew build
-    displayName: "Gradle build"
+  # - script: ./gradlew build
+  #   displayName: "Gradle build"
+
+  - task: Gradle@4
+    inputs:
+      gradleWrapperFile: "gradlew"
+      tasks: "build"
+      publishJUnitResults: true
+      testResultsFiles: "**/TEST-*.xml"
+      javaHomeOption: "JDKVersion"
+      sonarQubeRunAnalysis: false
+      checkStyleRunAnalysis: true
+      spotBugsAnalysis: false
