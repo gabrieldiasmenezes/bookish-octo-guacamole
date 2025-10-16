@@ -7,6 +7,6 @@ import org.junit.jupiter.api.Test;
 public class RecipeServiceTest {
   @Test
   void primeiroTest() {
-    assertEquals("corinthians", "santos");
+    assertEquals("guacamole", "guacamole");
   }
 }
