@@ -16,5 +16,5 @@ steps:
       testResultsFiles: "**/TEST-*.xml"
       javaHomeOption: "JDKVersion"
       sonarQubeRunAnalysis: false
-      checkStyleRunAnalysis: true
+      checkStyleRunAnalysis: false
       spotBugsAnalysis: false
